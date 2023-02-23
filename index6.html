@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Day-6</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #99d5ff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #4468e0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+
+        h1 {
+            margin-top: 0;
+            text-align: center;
+            color: #000000;
+        }
+
+        .profile-img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .info {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .info p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .button {
+            display: block;
+            margin: 20px auto 0;
+            padding: 10px 20px;
+            background-color: #0a0093;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgb(0, 0, 0);
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Student Profile</h1>
+        <img src="index6.png" alt="Profile Picture" class="profile-img">
+        <div class="info">
+            <p><strong>Name:</strong> Het Gajjar</p>
+            <p><strong>Enrollment No.:</strong> 200103042101</p>
+            <p><strong>College:</strong> SOCET (S.O.U.)</p>
+            <p><strong>Email:</strong> hetygajjar@gmail.com</p>
+            <p><strong>Program:</strong> Computer Engineering</p>
+            <p><strong>Graduation Year:</strong> 2024</p>
+        </div>
+        <button class="button">Download Resume</button>
+    </div>
+
+    <script>
+        document.querySelector('.button').addEventListener('click', function () {
+            window.open('https://example.com/resume.pdf');
+        });
+    </script>
+</body>
+
+</html>
